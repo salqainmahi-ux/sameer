@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saqlain Electronics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>🔌 Saqlain Electronics</header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#" onclick="filterCategory('Laptop')">Laptops</a>
+    <a href="#" onclick="filterCategory('Mobile')">Mobiles</a>
+    <a href="#" onclick="filterCategory('Accessory')">Accessories</a>
+    <a href="admin.html" class="admin-link">Admin</a>
+  </nav>
+
+  <div class="container" id="product-list">
+    <!-- Products will load here dynamically -->
+  </div>
+
+  <div id="cart" onclick="toggleCart()">🛒 View Cart</div>
+  <div id="cart-details">
+    <h3>Your Cart</h3>
+    <ul id="cart-items"></ul>
+    <p><strong>Total:</strong> Rs <span id="total">0</span></p>
+    <div class="checkout" onclick="checkout()">✅ Checkout</div>
+  </div>
+
+  <footer>© 2025 Saqlain Electronics | All Rights Reserved</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
